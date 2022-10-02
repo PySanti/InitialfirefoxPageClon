@@ -1,0 +1,111 @@
+body{
+    --base-padding : 20px;
+    --background-color : #aaa;
+    --base-border-radius : 20px;
+    background-color: #111;
+}
+
+.mid-container{
+    padding: var(--base-padding);
+    border-radius: var(--base-border-radius);
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 800px;
+}
+
+.mid-container > *{
+    margin : 20px;
+}
+
+.mid-container__begin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mid-container__begin__logo{
+    width: 82px;
+    height: 82px;
+    object-fit: contain;
+}
+
+
+.mid-container__begin__title{
+    font-size: 50px;
+    color: #fff;
+    font-family:   sans-serif;
+}
+
+
+.mid-container__text-input__input{
+    margin-left: 10px;
+}
+
+.mid-container__text-input__input::placeholder{
+    color: #aaa;
+}
+
+.mid-container__text-input{
+    display: flex;
+    padding : 10px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.mid-container__text-input__input{
+    border: none;
+    background-color: inherit;
+}
+
+.mid-container__text-input__input:focus{
+    border: none;
+    outline: none;
+    background-color: inherit;
+    color: #aaa;
+}
+
+.mid-container__text-input__logo{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.mid-container__page-elements-container{
+    align-self: center;
+    display: flex;
+}
+
+.mid-container__page-elements-container__element {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.mid-container__page-elements-container__element__title {
+    font-size: 10px;
+    color: #fff;
+}
+
+
+.mid-container__page-elements-container__element__img{
+    padding: 20px;
+    background-color: #333;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-left: 10px;
+    border-radius: 10px;
+    transition: background-color .3s;
+}
+
+.mid-container__page-elements-container__element__img:hover{
+    background-color: #999;
+
+}
